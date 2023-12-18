@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <!-- Link ke file CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke file CSS tambahan untuk styling sidebar -->
+</head>
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar">
+        <div class="position-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.php">
+                        Logout
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="input_siswa.php">
+                        Input Data Siswa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="input_biaya.php">
+                    Input Data Biaya
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="transaksi.php">
+                    Transaksi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="aporan.php">
+                    Laporan
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Konten -->
+    <div class="main-content">
+    <div class="card mt-3">
+  <h5 class="card-header bg-primary text-white text-center">Form Input Data Biaya</h5>
+  <div class="card-body">
+    <form method="post" action="">
+        <div class="form-group">
+            <label>Kode Jenis</label>
+            <input type="text" name="tnama" value="<?=@$vnama?>" class="form-control" placeholder="masukkan nama anda disini" required>
+        </div>
+        <div class="form-group">
+            <label>Jenis Biaya</label>
+            <input type="text" name="tnis" value="<?=@$vnis?>" class="form-control" placeholder="masukkan nis anda disini" required>
+        </div>
+        <div class="form-group">
+            <label>Nilai Biaya</label>
+            <input type="text" name="tkelas" value="<?=@$vkelas?>" class="form-control" placeholder="masukkan kelas anda disini" required>
+        </div>
+        <div class="form-group">
+            <label>No Handphone</label>
+            <select class="form-control"  name="tpelajaran_diminati">
+                <option value="<?=@$vpelajaran_diminati?>"><?$vpelajaran_diminati?></option>
+                <option value="Penjaskes">Penjaskes</option>
+                <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                <option value="Matematatika">Matematatika</option>
+                <option value="Seni Budaya">Seni Budaya</option>
+            </select>
+        </div>
+
+    <button type="submit" name="bsubmit" class="btn btn-success mt-3">Submit</button>
+    <button type="reset" name="breset" class="btn btn-danger mt-3">Kosongkan</button>
+</form>  
+</div>
+</div>
+<!-- Link ke file JavaScript Bootstrap (opsional, tergantung pada kebutuhan Anda) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

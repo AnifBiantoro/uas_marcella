@@ -1,0 +1,38 @@
+.sidebar {
+            position: fixed;
+            width: 200px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 48px 0;
+            background-color: #202325; /* Warna biru primary */
+        }
+
+        /* Main Konten */
+        .main-content {
+            margin-left: 250px; /* Lebar sidebar */
+            padding: 20px;
+        }
+
+li a:hover{
+    color: tomato;
+    padding-left: 30px;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+h2:hover{
+    color: tomato;
+    rotate: 2deg;
+
+}
+
+
+
